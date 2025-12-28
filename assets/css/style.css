@@ -1624,6 +1624,12 @@ body.dark-mode .footer {
     max-width: 320px;
   }
 
+  .contact-method[href^="mailto"] p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
   .contact-method .method-icon {
     margin-right: 12px;
   }
