@@ -5,766 +5,316 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chinmaya Pradhan</title>
+  <title>Chinmaya Pradhan | AI/ML Engineer</title>
 
-  <!-- favicon -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
 
-  <!-- custom css link -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- google font link -->
+  <!-- Google Fonts (Inter & Poppins) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
 
-  <!-- MAIN -->
-   
-  <main>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="./assets/images/image.png" alt="Logo" class="logo-img">
+      </a>
 
-    <!-- SIDEBAR -->
-     
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/photo.png" alt="Chinmaya Pradhan" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Chinmaya Pradhan">Chinmaya Pradhan</h1>
-          <p class="title">AI/ML Engineer</p>
-        </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="theme-toggle">
+        <button class="toggle-btn" id="themeToggle" title="Toggle dark/light mode">
+          <ion-icon name="moon" class="moon-icon"></ion-icon>
+          <ion-icon name="sunny" class="sun-icon"></ion-icon>
         </button>
       </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:chinmaya.pradhan117@gmail.com" class="contact-link">chinmaya.pradhan117@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+918249542255" class="contact-link">+91-8249542255</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="1982-06-23">December 22, 2003</time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Bhubaneswar, Odisha, India</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/chinmaya-pradhan-221203in/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://x.com/cpradhan2212" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/chinmaya2212" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
 
-    <!-- main-content -->
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <div class="main-content">
-
-      <!-- NAVBAR -->
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ABOUT -->
-
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            Hii, this is Chinmaya Pradhan, an AI/ML Engineer and Cloud Solutions Architect with a passion for designing intelligent, scalable, and impactful systems. I have a strong foundation in Machine Learning, Cloud Infrastructure, and DevOps Automation, and I aim to bridge the gap between theory and real-world implementation.
-          </p>
-          <p>
-            My strength lies in transforming complex data into actionable insights and building systems that create practical impact. Whether it’s developing end-to-end ML pipelines, building AI-powered systems, or optimizing cloud infrastructure, I focus on creating solutions that are efficient, secure, and user-centric.
-          </p>
-          <!-- <p>
-            <strong>What I Do Best:</strong><br>
-            ● Architect and automate cloud infrastructure for high availability and cost efficiency<br>
-            ● Build and fine-tune machine learning models for real-world impact<br>
-            ● Integrate AI/ML systems into production-ready environments using CI/CD and MLOps practices<br>
-            ● Design solutions that balance innovation, scalability, security, and performance
-          </p> -->
-          <p>
-            <strong>My Goal:</strong><br>
-            To build technology that enables smarter, faster, more secure, and more accurate decision-making at scale, empowering businesses and people through the power of AI and cloud computing.<br>
-            <br>
-            Let’s connect and create something impactful together!
-          </p>
-        </section>
-
-        <!-- service -->
-
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-cloud.png" alt="Cloud Solution Architect icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Solution Architect</h4>
-                <p class="service-item-text">
-                  Designing and implementing scalable, secure, and cost-effective cloud solutions at a professional level.
-                </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-devops.png" alt="DevOps Engineer icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">DevOps Engineer</h4>
-                <p class="service-item-text">
-                  Optimizing and automating deployment pipelines, ensuring seamless integration and continuous delivery across platforms.
-                </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-aiml.png" alt="AI/ML Engineer icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI/ML Engineer</h4>
-                <p class="service-item-text">
-                  Building intelligent systems with machine learning models and AI technologies to solve complex business problems.
-                </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-web.svg" alt="Web Development icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
-                <p class="service-item-text">
-                  Developing high-quality, responsive websites with a focus on user experience and performance at a professional level.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- testimonials -->
-
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Chinmaya Pradhan is a highly dedicated and skilled engineer with a sharp mind for AI/ML, cloud architecture, and DevOps. His ability to turn complex problems into innovative, efficient solutions is truly impressive. A reliable team player and a quick learner, Chinmaya consistently delivers beyond expectations.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Chinmaya Pradhan is a highly dedicated and skilled engineer with a sharp mind for AI/ML, cloud architecture, and DevOps. His ability to turn complex problems into innovative, efficient solutions is truly impressive. A reliable team player and a quick learner, Chinmaya consistently delivers beyond expectations.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Chinmaya Pradhan is a highly dedicated and skilled engineer with a sharp mind for AI/ML, cloud architecture, and DevOps. His ability to turn complex problems into innovative, efficient solutions is truly impressive. A reliable team player and a quick learner, Chinmaya consistently delivers beyond expectations.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Chinmaya Pradhan is a highly dedicated and skilled engineer with a sharp mind for AI/ML, cloud architecture, and DevOps. His ability to turn complex problems into innovative, efficient solutions is truly impressive. A reliable team player and a quick learner, Chinmaya consistently delivers beyond expectations.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- testimonials modal -->
-
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2025-05-15">15 May, 2025</time>
-              <div data-modal-text>
-                <p>
-                  Chinmaya Pradhan is a highly dedicated and skilled engineer with a sharp mind for AI/ML, cloud architecture, and DevOps. His ability to turn complex problems into innovative, efficient solutions is truly impressive. A reliable team player and a quick learner, Chinmaya consistently delivers beyond expectations.
-                </p>
-              </div>
-            </div>
-          </section>
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Chinmaya Pradhan</h1>
+        <p class="hero-subtitle">AI/ML Engineer | Cloud Solution Architect</p>
+        <p class="hero-description">To design and deliver intelligent systems that enable data-driven decision-making,
+          operational efficiency, and scalable innovation, empowering organizations to unlock real value through AI and
+          cloud technologies.</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">Explore Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
         </div>
+      </div>
 
-        <!-- clients -->
-
-        <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/icon-cloud.png" alt="client logo">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/icon-devops.png" alt="client logo">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/icon-cloud.png" alt="client logo">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/icon-devops.png" alt="client logo">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/icon-cloud.png" alt="client logo">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/icon-devops.png" alt="client logo">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- RESUME -->
-
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-        <section class="timeline">
-          <div>
-              <a href="./assets/images/Chinmaya_Pradhan_CV.pdf" class="form-btn" download>
-              <ion-icon name="download-outline"></ion-icon>
-              <span>Download Resume</span>
-              </a>
-          </div>
-          <br>
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Silicon University, Odisha</h4>
-              <span>2021 - 2025</span>
-              <p class="timeline-text">
-                B.Tech in Computer Science and Engineering<br>
-                CGPA: 9.22
-              </p>
-            </li>
-          </ol>
-        </section>
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Aptus Data Labs<br><i>(Software Engineer Intern)</i></h4>
-              <span>Jan 2025 - Jun 2025</span>
-              <p class="timeline-text">
-                <br>
-                <strong>1. AptPlan (Business Planning & Forecasting Tool):</strong>
-                <br>
-                Improved forecasting accuracy by 18% by developing models using seasonal, regional, and customer behavior data. Enabled zero-downtime releases by integrating updated models through automated CI/CD pipelines and version control in coordination with the backend team.
-                <br>
-                <strong>2. AptChat (AI-Enhanced Support Chatbot):</strong>
-                <br>
-                Increased responsiveness and user satisfaction by 30% by optimizing database queries and backend APIs. Integrated Generative and Agentic AI using LLMs to deliver personalized, context-aware responses. Designed scalable microservices to support high real-time support traffic.
-              </p>
-            </li>
-             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Aptus Data Labs<br><i>(Software Engineer Intern)</i></h4>
-              <span>Jan 2025 - Jun 2025</span>
-              <p class="timeline-text">
-                <br>
-                <strong>1. AptPlan (Business Planning & Forecasting Tool):</strong>
-                <br>
-                Improved forecasting accuracy by 18% by developing models using seasonal, regional, and customer behavior data. Enabled zero-downtime releases by integrating updated models through automated CI/CD pipelines and version control in coordination with the backend team.
-                <br>
-                <strong>2. AptChat (AI-Enhanced Support Chatbot):</strong>
-                <br>
-                Increased responsiveness and user satisfaction by 30% by optimizing database queries and backend APIs. Integrated Generative and Agentic AI using LLMs to deliver personalized, context-aware responses. Designed scalable microservices to support high real-time support traffic.
-              </p>
-            </li>
-          </ol>
-        </section>
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Cloud Solution</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">DevOps</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">AI/ML</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="50">50%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- PORTFOLIO -->
-
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Cloud Solution</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>DevOps</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>AI/ML</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-          </ul>
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Cloud Solution</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>DevOps</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>AI/ML</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-            </ul>
-          </div>
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-                <h3 class="project-title">Finance</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-                <h3 class="project-title">Orizon</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-                <h3 class="project-title">Fundo</h3>
-                <p class="project-category">Web Development</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="ai/ml">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-                <h3 class="project-title">Brawlhalla</h3>
-                <p class="project-category">AI/ML</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="ai/ml">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-                <h3 class="project-title">DSM.</h3>
-                <p class="project-category">AI/ML</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="cloud solution">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-                <h3 class="project-title">MetaSpark</h3>
-                <p class="project-category">Cloud Solution</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="devops">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-                <h3 class="project-title">Summary</h3>
-                <p class="project-category">DevOps</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="devops">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-                <h3 class="project-title">Task Manager</h3>
-                <p class="project-category">DevOps</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="cloud solution">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-                <h3 class="project-title">Arrival</h3>
-                <p class="project-category">Cloud Solution</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- BLOG -->
-
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-05-15">May 15, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-05-15">May 15, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-05-15">May 15, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-05-15">May 15, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                   <time datetime="2025-05-15">May 15, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-05-15">May 15, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- CONTACT -->
-
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119743.52297962956!2d85.82045315!3d20.300884149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1747242953110!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="https://formspree.io/f/mpwdkqnv" method="POST" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="./assets/images/newphoto.png" alt="Chinmaya Pradhan" class="hero-img">
+        </div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+      </div>
     </div>
 
-  </main>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hello, I'm Chinmaya Pradhan, an AI/ML Engineer with hands-on experience in Generative AI, Agentic AI, and
+            cloud-based intelligent systems. I specialize in designing, building, and deploying scalable AI solutions
+            that translate complex data and advanced models into practical, business-ready outcomes.</p>
+
+          <p>My professional focus lies in developing end-to-end AI/ML solutions, from data modeling and intelligent
+            automation to production deployment and optimization. I have worked on AI-powered applications such as
+            forecasting platforms and conversational systems, where I integrated LLMs, agent-based workflows, and
+            performance-optimized backend services to deliver reliable, context-aware, and scalable solutions.</p>
+
+          <h3 class="about-subtitle">Core Areas of Expertise</h3>
+          <div class="expertise-grid">
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </div>
+              <h4>AI/ML Engineering</h4>
+              <p>Model Development, Generative AI, and Agentic AI Systems</p>
+            </div>
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <ion-icon name="cloud"></ion-icon>
+              </div>
+              <h4>Cloud Architecture</h4>
+              <p>Cloud Native Applications and Scalable Microservices</p>
+            </div>
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <ion-icon name="git-branch-outline"></ion-icon>
+              </div>
+              <h4>MLOps & CI/CD</h4>
+              <p>Production AI Deployment and Intelligent Workflows</p>
+            </div>
+          </div>
+
+          <p class="about-goal"><strong>My Professional Objective:</strong> To design and deliver intelligent systems
+            that enable data-driven decision-making, operational efficiency, and scalable innovation, empowering
+            organizations to unlock real value through AI and cloud technologies.</p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Clients Served</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="portfolio-controls">
+        <div class="search-bar">
+          <ion-icon name="search"></ion-icon>
+          <input type="text" id="portfolioSearch" placeholder="Search projects...">
+        </div>
+
+        <div class="filter-dropdown">
+          <select id="portfolioFilter" class="filter-select">
+            <option value="all">All Projects</option>
+            <option value="ai-ml">AI/ML</option>
+            <option value="cloud">Cloud Solutions</option>
+            <option value="devops">DevOps</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Portfolio items will be populated by JavaScript -->
+      </div>
+      <div class="view-more-container">
+        <button id="portfolioViewMore" class="view-more-btn">View More Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <h2 class="section-title">Blogs & Insights</h2>
+
+      <div class="blog-controls">
+        <div class="search-bar">
+          <ion-icon name="search"></ion-icon>
+          <input type="text" id="blogSearch" placeholder="Search articles...">
+        </div>
+
+        <div class="filter-dropdown">
+          <select id="blogFilter" class="filter-select">
+            <option value="all">All Articles</option>
+            <option value="ai-ml">AI/ML</option>
+            <option value="cloud">Cloud</option>
+            <option value="devops">DevOps</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <!-- Blog items will be populated by JavaScript -->
+      </div>
+      <div class="view-more-container">
+        <button id="blogViewMore" class="view-more-btn">View More Articles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>I'm always interested in hearing about new projects and opportunities.</p>
+
+          <div class="contact-methods">
+            <a href="mailto:chinmaya.pradhan117@gmail.com" class="contact-method">
+              <div class="method-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>chinmaya.pradhan117@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+918249542255" class="contact-method">
+              <div class="method-icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91-8249542255</p>
+              </div>
+            </a>
+
+            <div class="contact-method">
+              <div class="method-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Hyderabad, Telangana, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/mpwdkqnv" method="POST" class="contact-form" contact-form>
+          <div class="form-group">
+            <input type="text" name="fullname" placeholder="Your Name" required contact-form-input>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required contact-form-input>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required contact-form-input></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" contact-form-btn>Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Chinmaya Pradhan. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chinmaya-pradhan-221203in" title="LinkedIn" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/chinmaya2212" title="GitHub" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://x.com/cpradhan2212" title="Twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT WIDGET -->
+  <div class="chatbot-widget" id="chatbotWidget">
+    <div class="chatbot-header">
+      <h3>Mannat AI</h3>
+      <button class="chatbot-close" id="chatbotClose">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot-message">
+        <p>Hi! I'm Mannat AI. How can I help you today?</p>
+      </div>
+    </div>
+
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Type a message...">
+      <button id="chatbotSend">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </div>
+  </div>
+
+  <!-- CHATBOT BUTTON -->
+  <button class="chatbot-button" id="chatbotBtn" title="Open Mannat AI Chat">
+    <div class="chatbot-pulse"></div>
+    <ion-icon name="chatbubble-ellipses"></ion-icon>
+  </button>
 
   <!-- custom js link -->
+  <script src="./assets/js/chatData.js"></script>
   <script src="./assets/js/script.js"></script>
-
-  <!-- ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
