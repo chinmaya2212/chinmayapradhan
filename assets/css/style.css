@@ -1614,6 +1614,11 @@ body.dark-mode .footer {
     text-align: left;
   }
 
+ .contact .container {
+    margin-left: auto;
+    margin-right: auto;
+ }
+
   .footer .container {
     display: flex;
     flex-direction: column;
@@ -1635,8 +1640,8 @@ body.dark-mode .footer {
   }
 
   .nav-logo img {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -1748,6 +1753,10 @@ body.dark-mode .footer {
   .contact-content {
     gap: 30px;
   }
+ .contact .container {
+    margin-left: auto;
+    margin-right: auto;
+ }
 
   .chatbot-button {
     width: 55px;
